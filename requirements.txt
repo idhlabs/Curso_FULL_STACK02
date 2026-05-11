@@ -1,4 +1,4 @@
 Django==4.1.2
 pillow
-crispy-forms
+django-crispy-forms
 crispy-bootstrap5
