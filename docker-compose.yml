@@ -1,3 +1,6 @@
+# docker-compose.yml with Traefik labels for self-hosted homelab
+# Network "dhlabs-network" must exist (create with: docker network create dhlabs-network)
+
 services:
   pet-shop-curso:
     build:
