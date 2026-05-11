@@ -6,16 +6,11 @@ services:
     restart: unless-stopped
     networks:
       - dhlabs-network
-    volumes:
-      - ./media:/app/media
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.pet-shop-curso.rule=Host(`pet-shop-curso.dhlabs.cl`)"
+      - "traefik.http.routers.pet-shop-curso.rule=Host(`pet-shop.dhlabs.cl`)"
       - "traefik.http.routers.pet-shop-curso.entrypoints=web"
       - "traefik.http.services.pet-shop-curso.loadbalancer.server.port=80"
-    environment:
-      - DEBUG=False
-      - ALLOWED_HOSTS=pet-shop-curso.dhlabs.cl
 
 networks:
   dhlabs-network:
