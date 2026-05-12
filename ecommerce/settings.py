@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-0ap5=+8+n#4dzc37e(*4j(!o6hc1!9&)6#vw=*_2moaf--h1hf
 DEBUG = True
 
 ALLOWED_HOSTS = ['pet-shop.dhlabs.cl']
+CSRF_TRUSTED_ORIGINS = ['https://pet-shop.dhlabs.cl']
 
 
 # Application definition
